@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="save_ok.php" method="post">
+        
+        <fieldset style = "width:250px; margin:10px">
+            <legend>개인 정보 입력란</legend>
+        <label for = "fname">이름 : </label>
+        <input type="text" id="uname" name = "uname" required><br>
+        <label for="pwd">비밀번호 : </label>
+        <input type = "password" id="pwd" name ="pwd" placeholder="8자리 이상 입력" required><br>
+        <br>
+        <label for = 'mobile'>핸드폰 번호 : </label>
+        <input type = 'text' id='mobile' name='mobile' placeholder="xxx-xxxx-xxxx" 
+        pattern="[0-1]{3}-[0-9]{4}-[0-9]{4}" maxlength = "13"><br>
+        <br>
+        <label for = "gender1">성별 : </label>
+        <input type = "radio" id = "gender1" name = "gender" value = 'M' checked> 남성 
+        <input type = "radio" id = "gender1" name = "gender" value = 'W' > 여성 <br>
+        <label for="birthday">생년월일 : </label>
+        <input type="date" id="birthday" name="birthday"><br>
+    </fieldset>
+    <fieldset style = "width:250px; margin:10px">
+        <label for = "beforesleep">자기 전에 하는 행동 : </label><br>
+        <input type = "checkbox" id = "beforesleep" name = "sleep1" value="1" checked> SNS(카카오톡,인스타그램 등) <br>
+        <input type = "checkbox" id = "beforesleep" name = "sleep2" value="2" > 동영상 시청(영화, 유튜브 등) <br>
+        <input type = "checkbox" id = "beforesleep" name = "sleep3" value="3" > 게임 <br>
+        <input type = "checkbox" id = "beforesleep" name = "sleep4" value="4" > 독서 <br>
+        <input type = "checkbox" id = "beforesleep" name = "sleep5" value="5" > 기타 <br>
+
+        <br>
+        <label for = "sleeptime">평균 수면 시간 : </label><br>
+        <input type = "radio" id = "sleeptime" name = "time" value = '9' > 9시간 초과 <br>
+        <input type = "radio" id = "sleeptime" name = "time" value = '8' > 8~9시간 <br>
+        <input type = "radio" id = "sleeptime" name = "time" value = '7' > 7~8시간 <br>
+        <input type = "radio" id = "sleeptime" name = "time" value = '6' > 7시간 미만 <br>
+        <br>
+        <label for = "country">사는 국가 : </label>
+        <select id="country" name="countrylist" form="countryform">
+        <option value="korea">대한민국</option>
+        <option value="unitedstates">미국</option>
+        <option value="china">중국</option>
+        <option value="japan">일본</option>
+    </select>
+    <br>
+    <br>
+    <label for="question">기타문의사항 : </label><br>
+  <textarea id="question" name="question" rows="3" cols="30">궁금한 점이 있다면 여기에 써주세요.</textarea>
+  <br>
+
+    </fieldset>
+        <input type="submit" value="저장"> <input type = "reset" value = "새로작성">
+    </form>
+
+
+
+
+
+</body>
+</html>
